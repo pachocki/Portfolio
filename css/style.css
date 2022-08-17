@@ -167,7 +167,7 @@ opacity: 1;
   width: 100%;
   height: 100vh;
   background:var(--color-black);
-  z-index: 99;
+  z-index: 10000;
 }
 
 .loader {
@@ -246,8 +246,9 @@ transform: translate(50%,-50%);
   padding: 1em 0 ;
   border-bottom: 1px solid var(--color-black);
   background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 1px 23px 0 rgb(0 0 0 / 37%);
-    backdrop-filter: blur( 20px );
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
 }
 
 .navbar__items{
@@ -390,6 +391,7 @@ body.dark .menu__toggle,body.dark .cursor{
 }
 body.dark .navbar__pc{
   border-bottom: 1px solid var(--color-white);
+  background:rgb(20 19 19 / 75%);
 }
 
 body.dark .rolling__txt .block:last-child , body.dark .social__icons {
@@ -448,6 +450,7 @@ color:var(--color-warning);
 }
 body.dark .navbar__mobile{
   border-bottom:1px solid var(--color-white);
+  background:rgb(20 19 19 / 75%);
 }
 /*===============================Custom Scrollbar Dark Mode=============================*/
 /* width */
@@ -1257,12 +1260,13 @@ font-size:2em;
   .navbar__mobile{
     display: flex;
     justify-content: space-between;
-    padding: 10px 1.8em;
+    padding: 20px 1.8em;
     align-items: center;
     border-bottom: 1px solid black;
     background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 1px 23px 0 rgb(0 0 0 / 37%);
-    backdrop-filter: blur( 20px );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
 }
 .nav__logo{
   width:150px;
@@ -1282,10 +1286,11 @@ font-size:2em;
   width: 100%;
   justify-content: center;
   align-items: center;
-  top:-100%;
+  top:-1000px;
   left:0;
   bottom:0;
   transition:0.1s;
+  z-index:2;
 }
   .menu__items__mobile{
    display:flex;
@@ -1295,6 +1300,7 @@ font-size:2em;
   .toggle__container{
     display:flex;
     gap:1em;
+    z-index:1;
   }
   .exit{
     position: absolute;

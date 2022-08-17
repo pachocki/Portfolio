@@ -177,6 +177,7 @@ gsap.utils.toArray(".color").forEach(function(elem) {
       onLeaveBack: () => gsap.to('body', {backgroundColor:''}), 
       onEnterBack: () => gsap.to('body', {backgroundColor:color}), 
     });
+    
   
   });
 //Cursor
