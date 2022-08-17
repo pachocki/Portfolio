@@ -136,8 +136,10 @@ speed = 0.04;
       callScroll = requestAnimationFrame(smoothScroll);
   }
 
-smoothScroll();
 
+if ( $(window).width() > 510) {
+  smoothScroll();
+}
 //Text reval
 let listItems = [...document.querySelectorAll('li')];
 
