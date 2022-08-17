@@ -914,7 +914,6 @@ opacity:0.4;
   margin: 0 auto;
   width: 90%;
   position: relative;
-  overflow:hidden;
   
 }
 
@@ -1317,6 +1316,9 @@ font-size:2em;
 @media screen and (max-width: 510px){
   #my-scrollbar{
     position: relative;
+  }
+  .parallax__container{
+    overflow:hidden;
   }
   .cursor{
     display:none;
