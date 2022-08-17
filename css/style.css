@@ -900,9 +900,7 @@ opacity:0.4;
   .gsap__logo{
     width:80px;
   }
-  div.skill__row:nth-of-type(2){
-    grid-template-columns: repeat(3,1fr);
-  }
+ 
 /*==============================END OF SKILL SECTION=====================================*/  
 
 
