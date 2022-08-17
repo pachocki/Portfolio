@@ -130,7 +130,7 @@ background:var(--color-black);
 width: 15px;
 height: 15px;
 border-radius: 100%;
-z-index: 999;
+z-index: 1000;
 transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
 user-select: none;
