@@ -897,6 +897,7 @@ opacity:0.4;
     gap: 10px;
     text-align: center;
     font-size: 12px;
+    -webkit-text-stroke: thin;
   }
   
   .skill__row i{
