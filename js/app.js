@@ -30,6 +30,7 @@ ease: Expo.easeInOut,
 delay: 2.6
 });
 
+
 //Mobile Menu
 //Navigation Mobile Full Screen
 const menuBtn=document.querySelector(".toggle__button")
@@ -118,14 +119,15 @@ let elements = document.querySelectorAll(".rolling__txt");
         });
       });
 
-const lol = document.body,
+//Smooth Scroll
+const documentBody = document.body,
 scrollWrap = document.querySelector("#my-scrollbar"),
 height = scrollWrap.getBoundingClientRect().height-0.2,
 speed = 0.04;
 
   var offset = 0;
 
-  lol.style.height = Math.floor(height) + "px";
+  documentBody.style.height = Math.floor(height) + "px";
 
   function smoothScroll() {
       offset += (window.pageYOffset - offset) * speed;
@@ -163,6 +165,31 @@ let listItems = [...document.querySelectorAll('li')];
         itemText.map(letter=>(newString +=letter===' ' ? `<span class="gap"></span>`: `<span>${letter}</span>`))
         observer.observe(item);
     });
+//Reveal Nav on Scroll
+
+
+let lastScroll = 0;
+
+
+window.addEventListener("scroll", () => {
+	const currentScroll = window.pageYOffset;
+	if (currentScroll <= 0) {
+		documentBody.classList.remove("scroll__up");
+		return;
+	}
+
+	if (currentScroll > lastScroll && !body.classList.contains("scroll__down")) {
+		documentBody.classList.remove("scroll__up");
+		documentBody.classList.add("scroll__down");
+	} else if (
+		currentScroll < lastScroll &&
+		documentBody.classList.contains("scroll__down")
+	) {
+		documentBody.classList.remove("scroll__down");
+		documentBody.classList.add("scroll__up");
+	}
+	lastScroll = currentScroll;
+});
 
 //change background on scroll
 
