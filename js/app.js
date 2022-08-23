@@ -20,12 +20,12 @@ var tl = new TweenMax.staggerFrom(".portfolio__image", 2, {
 }, 0.1);
 
 TweenMax.to(".wrapper", 2, {
-top: "-100%",
+top: "-120%",
 ease: Expo.easeInOut,
 delay: 2.6
 });
 TweenMax.to(".loader", 2, {
-top: "-100%",
+top: "-120%",
 ease: Expo.easeInOut,
 delay: 2.6
 });
