@@ -268,7 +268,18 @@ $(window).scroll(function () {
         $('html,body').animate({scrollTop:dest}, 1000,'swing');
     });
 
+//FOOTER
+gsap.registerPlugin('scrollTrigger');
 
+gsap.to('.footer__smile', {
+  scrollTrigger: {
+    trigger: '.footer__smile',
+    start: 'top center',
+  },
+  xPercent: -200,
+  rotation:360,
+  duration: 3,
+})
 
 
 

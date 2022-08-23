@@ -1013,6 +1013,7 @@ footer{
   position: relative;
   margin: 5em 1em 0 1em;
   height: 100vh;
+  overflow:hidden;
 }
 .footer__title{
   font-size:5em;
@@ -1034,6 +1035,13 @@ footer{
   position:absolute;
   bottom:30%;
   
+}
+.footer__smile{
+    width: 200px;
+    height: 200px;
+    bottom: 35%;
+    position: absolute;
+    right: -20%;
 }
 .footer__social{
   position: absolute;
@@ -1075,8 +1083,11 @@ footer{
   }
 
 }
-
-
+@media screen and (max-width: 1350px){
+.footer__smile{
+  display:none;
+}
+}
 @media screen and (max-width: 1100px) {
 
 .header__text h1{
