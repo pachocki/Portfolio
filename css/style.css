@@ -640,7 +640,7 @@ backdrop-filter: blur( 20px );
 .header__text h1 {
 font-size: 6rem;
 text-transform: uppercase;
--webkit-text-stroke-width:medium;
+-webkit-text-stroke-width: thin;
 line-height:1;
 }
 .astrick{
