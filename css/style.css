@@ -218,6 +218,7 @@ transform: translate(50%,-50%);
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap:3em;
   
 }
 .loader__mid span{
@@ -1079,9 +1080,23 @@ footer{
     padding-top: 1em;
   }
   .header__text h1{
-    font-size:8rem;
+    font-size:7rem;
   }
-
+  .row{
+    height:90vh;
+  }.arrow__prjct{
+    width:25px;
+  }.view__more{
+    height: 90vh;
+  }
+  .button__view{
+    width:300px;
+    height:300px;
+  }
+  .my__skills{
+    height:85vh;
+  }
+  
 }
 @media screen and (max-width: 1350px){
 .footer__smile{
