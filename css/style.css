@@ -1456,7 +1456,7 @@ font-size:2em;
     bottom:30px;
   }
 }
-@media screen and (orientation: landscape) {
+@media  (max-device-width: 480px) and (orientation: landscape) {
   #my-scrollbar{
     position:relative;
   }
