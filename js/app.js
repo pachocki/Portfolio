@@ -139,7 +139,7 @@ speed = 0.04;
   }
 
 
-if ( $(window).width() > 768) {
+if ( $(window).width() > 950) {
   smoothScroll();
 }
 //Text reval

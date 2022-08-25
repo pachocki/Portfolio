@@ -1459,7 +1459,7 @@ font-size:2em;
 }
 @media only screen 
   and (min-device-width: 380px) 
-  and (max-device-width: 768px)
+  and (max-device-width: 920px)
   and (orientation: landscape) { 
 
   #my-scrollbar{
@@ -1478,9 +1478,10 @@ font-size:2em;
   }
   .hire__me{
     bottom:-30%;
+    right:24%;
   }
 
-  .row , .my__skills {
+  .row , .my__skills , .about__me {
     height:135vh;
   }
  
@@ -1489,8 +1490,9 @@ font-size:2em;
   
  }
  .work__section{
-  padding-top:5em;
+  padding-top:15em;
  }
+
 }
 
 
