@@ -1456,5 +1456,10 @@ font-size:2em;
     bottom:30px;
   }
 }
+@media screen and (orientation: landscape) {
+  #my-scrollbar{
+    position:relative;
+  }
+}
 
 
