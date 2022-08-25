@@ -1075,6 +1075,7 @@ footer{
   }
   /*===END OF BACK TO THE TOP==*/
 /* media queries  */
+
 @media screen and (min-width: 1600px){
   .header__text{
     padding-top: 1em;
@@ -1456,9 +1457,11 @@ font-size:2em;
     bottom:30px;
   }
 }
-@media screen and (orientation:landscape)
-and (min-device-width: 319px) 
-and (max-device-width: 480px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
 
   #my-scrollbar{
     position:relative;
@@ -1484,12 +1487,15 @@ and (max-device-width: 480px) {
     height:135vh;
   }
   .my__skills{
-    height:90vh;
+    height:120vh;
   }
-  .about__me{
-    height:115vh;
-  }
+ .text{
+  font-size:38px;
+  
+ }
   
 }
+
+
 
 
