@@ -1485,6 +1485,7 @@ font-size:2em;
   position: relative;
   grid-column-start: 1;
   grid-column-end: 2;
+  gap:0;
 
 }
   
@@ -1510,12 +1511,17 @@ font-size:2em;
  .card{
   grid-column-start: 2;
   align-self:end;
+  margin:0;
  }
  .work__section{
-  padding-top:5em;
+  padding-top:15em;
+  overflow:hidden;
  }
  .project__text {
   font-size: 2.5rem;
+}
+.project__des{
+  font-size:3rem;
 }
 
 }
