@@ -139,7 +139,7 @@ speed = 0.04;
   }
 
 
-if ( $(window).width() > 510) {
+if ( $(window).width() > 768) {
   smoothScroll();
 }
 //Text reval
@@ -165,8 +165,9 @@ let listItems = [...document.querySelectorAll('li')];
         itemText.map(letter=>(newString +=letter===' ' ? `<span class="gap"></span>`: `<span>${letter}</span>`))
         observer.observe(item);
     });
-//Reveal Nav on Scroll
 
+
+//Reveal Nav on Scroll
 
 let lastScroll = 0;
 
@@ -242,7 +243,7 @@ $(window).scroll(function () {
     });
 
     
-
+//Paralax text effect
     gsap.to('.parallax__title', {
         xPercent: -220,
         ease: "none",
