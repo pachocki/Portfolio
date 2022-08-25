@@ -1461,7 +1461,15 @@ font-size:2em;
   and (min-device-width: 380px) 
   and (max-device-width: 920px)
   and (orientation: landscape) { 
-
+.loader__mid{
+  gap:1em;
+}
+.loader__mid span{
+  font-size:1.3em;
+}
+.world , .ground{
+  width:100px;
+}
   #my-scrollbar{
     position:relative;
   }
@@ -1470,14 +1478,14 @@ font-size:2em;
 
   }
   .row{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   display: grid;
   height: 100vh;
   margin-bottom: 2em;
   position: relative;
   grid-column-start: 1;
   grid-column-end: 2;
-  gap: 1em;
+
 }
   
   .hero__wrapper{
@@ -1499,9 +1507,16 @@ font-size:2em;
   font-size:38px;
   
  }
- .work__section{
-  padding-top:15em;
+ .card{
+  grid-column-start: 2;
+  align-self:end;
  }
+ .work__section{
+  padding-top:5em;
+ }
+ .project__text {
+  font-size: 2.5rem;
+}
 
 }
 
