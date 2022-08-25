@@ -1456,7 +1456,10 @@ font-size:2em;
     bottom:30px;
   }
 }
-@media  (max-device-width: 480px) and (orientation: landscape) {
+@media screen and (orientation:landscape)
+and (min-device-width: 319px) 
+and (max-device-width: 480px) {
+
   #my-scrollbar{
     position:relative;
   }
@@ -1464,14 +1467,24 @@ font-size:2em;
     overflow:hidden;
 
   }
+  
+  .hero__wrapper{
+    height:130vh;
+  }
   .hero__section{
-    height:170vh;
+    top:12%;
+  }
+  .hire__me{
+    bottom:-50%;
   }
   .work__section{
-    margin-top:60vh;
+    margin-top:20vh;
   }
-  .row , .my__skills{
+  .row {
     height:135vh;
+  }
+  .my__skills{
+    height:90vh;
   }
   .about__me{
     height:115vh;
