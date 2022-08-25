@@ -1460,6 +1460,23 @@ font-size:2em;
   #my-scrollbar{
     position:relative;
   }
+  .parallax__container{
+    overflow:hidden;
+
+  }
+  .hero__section{
+    height:170vh;
+  }
+  .work__section{
+    margin-top:60vh;
+  }
+  .row , .my__skills{
+    height:135vh;
+  }
+  .about__me{
+    height:115vh;
+  }
+  
 }
 
 
