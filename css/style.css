@@ -223,7 +223,7 @@ transform: translate(50%,-50%);
 }
 .loader__mid span{
   color:var(--color-white);
-  font-size:2em;
+  font-size:2.3em;
   font-weight:bold;
 }
 .world{
@@ -1096,7 +1096,12 @@ footer{
   .my__skills{
     height:85vh;
   }
-  
+  .world{
+    width:200px;
+  }
+  .ground{
+    width:300px;
+  }
 }
 @media screen and (max-width: 1350px){
 .footer__smile{
