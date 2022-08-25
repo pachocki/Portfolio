@@ -1469,6 +1469,16 @@ font-size:2em;
     overflow:hidden;
 
   }
+  .row{
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  height: 100vh;
+  margin-bottom: 2em;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  gap: 1em;
+}
   
   .hero__wrapper{
     height:130vh;
@@ -1481,7 +1491,7 @@ font-size:2em;
     right:24%;
   }
 
-  .row , .my__skills , .about__me {
+  .my__skills , .about__me {
     height:135vh;
   }
  
