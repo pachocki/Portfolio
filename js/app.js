@@ -275,7 +275,7 @@ gsap.registerPlugin('scrollTrigger');
 gsap.to('.footer__smile', {
   scrollTrigger: {
     trigger: '.footer__smile',
-    start: 'top center',
+    start: '-=450px',
   },
   xPercent: -200,
   rotation:360,
