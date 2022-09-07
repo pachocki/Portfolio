@@ -129,6 +129,7 @@ a{
   top: 0;
   left: 0;
   scroll-behavior: smooth;
+ 
   
 }
 
@@ -656,9 +657,13 @@ line-height:1;
   from {transform:rotate(0deg); }
   to {transform:rotate(360deg); }
 }
+.header__text__desc h3{
+  font-size:1.2em;
+}
 .header__text__desc{
   padding-top:30px;
 }
+
 .social__icons{
   display: flex;
   gap: 3em;
@@ -702,14 +707,13 @@ width:50px;
 content: var(--cross);
 }
 .row{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   display: grid;
   height:100vh;
-  margin-bottom:2em;
+  margin:2em 0;
   position:relative;
   grid-column-start: 1;
   grid-column-end:2;
-  gap:1em;
 }
 .card{
   grid-column-start:2;
@@ -717,10 +721,7 @@ content: var(--cross);
   bottom:0;
 
 }
-.work__section{
-  padding-top: 12em;
-  
-}
+
 .marquee{
   writing-mode: vertical-rl;
   text-orientation: sideways;
@@ -1023,20 +1024,19 @@ footer{
   font-weight:bold;
 }
 .mail{
-  border-bottom:2px solid white;
   font-size:4em;
   color:white;
-  position:relative;
-  top:1em;
   transition:0.5s ease-in-out;
 }
 .mail:hover{
   color:orangered;
-  border-bottom:2px solid orangered;
 }
 .footer__contact{
   position:absolute;
   bottom:30%;
+  display:flex;
+  flex-direction: column;
+  gap:2em;
   
 }
 .footer__smile{
@@ -1106,10 +1106,19 @@ footer{
     width:300px;
   }
 }
+
+  
+
+
 @media screen and (max-width: 1350px){
 .footer__smile{
   display:none;
 }
+.row , .my__skills{
+  height:80vh;
+}
+
+
 }
 @media screen and (max-width: 1100px) {
 
@@ -1156,8 +1165,14 @@ font-size:2em;
 }
 
 }
+@media screen and (max-width: 950px) {
+#my-scrollbar{
+  position:relative;
+  overflow:hidden;
+  
+}
 
-@media screen and (max-width: 840px) {
+
 .heder__text{
   margin-top:6em;
 }
@@ -1210,15 +1225,15 @@ font-size:2em;
   font-size: 3em;
 }
 .row{
-  display:grid;
-  grid-template-columns: 1fr;
-  margin-bottom:2.5em;
+
+  height:60vh;
+  width:98%;
+  margin:2em auto;
+
+  
+ 
 }
-.card{
-  position:relative;
-  margin:1em;
-  grid-column-start: 1;
-}
+
 .project__des{
     font-size: 3em;
     font-weight: bold;
@@ -1238,8 +1253,15 @@ font-size:2em;
   ul li span{
     font-size:1.6rem;
   }
+ 
 
-
+}
+@media screen and (max-width:745px){
+  .row{
+    display:flex;
+    flex-direction: column;
+    height: 70vh;
+  }
 }
 @media screen and (max-width: 660px){
   .header__text h1{
@@ -1276,9 +1298,7 @@ font-size:2em;
   .social__icons{
     font-size: 10px;
   }
-  .work__section{
-    padding-top:5em;
-  }
+  
   ul li{
     height:2rem;
   }
@@ -1368,6 +1388,7 @@ font-size:2em;
 @media screen and (max-width: 510px){
   #my-scrollbar{
     position: relative;
+   
   }
   .parallax__container{
     overflow:hidden;
@@ -1465,76 +1486,121 @@ font-size:2em;
     bottom:30px;
   }
 }
-@media only screen 
-  and (min-device-width: 380px) 
-  and (max-device-width: 920px)
-  and (orientation: landscape) { 
-.loader__mid{
-  gap:1em;
-}
-.loader__mid span{
-  font-size:1.3em;
-}
-.world , .ground{
-  width:100px;
-}
-  #my-scrollbar{
-    position:relative;
-  }
-  .parallax__container{
-    overflow:hidden;
-
-  }
-  .row{
-  grid-template-columns: 0.8fr 1fr;
-  display: grid;
-  height: 100vh;
-  margin-bottom: 2em;
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  gap:0;
-
-}
-  
-  .hero__wrapper{
-    height:130vh;
+@media screen and (max-width: 380px){
+  .work__container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    
   }
   .hero__section{
-    top:12%;
-  }
-  .hire__me{
-    bottom:-30%;
-    right:24%;
-  }
+    grid-template-columns: 13% 35% 1fr 5%;
 
-  .my__skills , .about__me {
-    height:135vh;
   }
+  .work__col1{
+    display:none;
+  }
+  .row{
+    height:60vh;
+    width:95%;
+    margin:2em auto;
+  }
+  .social__icons{
+    gap:2em;
+  }
+  .header__text h1{
+    font-size:2.2rem;
+  }
+  .cross{
+    width:30px;
+  }
+  .work__title{
+    font-size:2em;
+    margin-left:1rem;
+  }
+  .project__text{
+    font-size:2rem;
+  }
+  .view__more h2 {
+    font-size:2.8rem;
+  }
+  .view__more{
+    height:70vh;
+  }
+  .about__me , my__skills{
+    height:100%;
+  }
+  .footer__smile{
+    display:none;
+  }
+  footer{
+    height:30vh;
+  }
+  .mail{
+    font-size:1.2rem;
+  }
+  .toggle__button{
+    width:35px;
+  }
+  .nav__logo {
+    width:120px;
+  }
+  .loader__bottom span{
+    font-size:11px;
+  }
+}
+
+@media screen and (orientation:landscape) and
+(min-device-width: 660px) and (max-device-width: 920px) and (min-device-height: 320px) and (max-device-height: 425px) {
+  .work__section{
+    margin-top: 12em;
  
- .text{
-  font-size:38px;
-  
- }
- .card{
-  grid-column-start: 2;
-  align-self:end;
-  margin:0;
- }
- .work__section{
-  padding-top:15em;
-  
- }
- .project__text {
-  font-size: 2.5rem;
 }
-.project__des{
-  font-size:3rem;
-}
+.hire__me{
+  top:110%;
 
 }
+.row{
+  height:100vh;
+  display:flex;
+  flex-direction: row;
+}
+.card{
+  position:relative;
+}
+.my__skills , .about__me{
+  height:100%;
+}
+.footer__contact{
+  bottom:15%;
+}
+body{
+  max-height:100vh;
+}
+.project__text{
+  font-size:2rem;
+}
+.text__stroke{
+    -webkit-text-stroke-color:var(--color-white);
+}
+.work__col2 {
+  border-left: 1px solid var(--color-white);
+  border-top: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+}
+.loader__mid{
+  gap:0;
+}
+.loader__mid span{
+  font-size:1.5rem;
+}
+.world {
+  width: 90px;
+}
+.ground{
+  width:100px;
+}
+.mail{
+  font-size:2em;
+}
 
-
-
-
-
+}

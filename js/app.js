@@ -125,14 +125,14 @@ scrollWrap = document.querySelector("#my-scrollbar"),
 height = scrollWrap.getBoundingClientRect().height-0.2,
 speed = 0.04;
 
-  var offset = 0;
+  let offset = 0;
 
   documentBody.style.height = Math.floor(height) + "px";
 
   function smoothScroll() {
       offset += (window.pageYOffset - offset) * speed;
 
-      var scroll = "translateY(-" + offset + "px) translateZ(0)";
+      const scroll = "translateY(-" + offset + "px) translateZ(0)";
       scrollWrap.style.transform = scroll;
 
       callScroll = requestAnimationFrame(smoothScroll);
