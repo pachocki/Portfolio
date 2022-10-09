@@ -2333,7 +2333,7 @@ body.dark .case__study__row h3 {
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .case__study h2 {
     font-size: 2rem;
   }
@@ -2363,6 +2363,36 @@ body.dark .case__study__row h3 {
     font-size: 1rem;
   }
 
+  .project__images__slajd {
+    display: block;
+    overflow: hidden;
+    width: 400px;
+    height: 250px;
+
+  }
+
+  .project__images__slajd span {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+
+  }
+
+  #projects__hero {
+    background: #414141;
+  }
+
+  .project__img,
+  .project__img__main {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
 }
 
